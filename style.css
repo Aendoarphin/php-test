@@ -1,0 +1,33 @@
+:root {
+  --background: #ffffff;
+  --foreground: #101010;
+
+  --primary: #dc143c;  
+  --info: #1e90ff;
+  --warning: #ff8c00;
+  --danger: #ad3838;
+  --success: #32cd32;
+  --muted: #888888;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101010;
+    --foreground: #e3e3e3;
+
+    --primary: #ff4d6d;
+    --info: #4dabff;   
+    --warning: #ffb347;
+    --danger: #e35d5d; 
+    --success: #4ee44e;
+    --muted: #aaaaaa;  
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
